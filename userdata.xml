@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="ENTER YOUR NAME"
+        android:padding="20dp"
+         />
+
+    <EditText
+        android:id="@+id/ph"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/name"
+        android:padding="20dp"
+        android:hint="ENTRE YOUR PHONE NO" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ph"
+        android:id="@+id/ok"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+
+        android:text="SUBMIT"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ok" />
+
+</RelativeLayout>

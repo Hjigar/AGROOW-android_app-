@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/kisan" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/d_green"
+        android:layout_toRightOf="@+id/logo"
+        android:text="Good Day,"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:text="✔"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv2"
+        android:drawableEnd="@drawable/off"
+        android:text="Logout" />
+ <!--SERVIICE-->
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:text="SERVICE OF AGROWW"
+        android:textColor="@color/d_green"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/license"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/service"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/license_cr" />
+
+    <TextView
+        android:id="@+id/tlicense"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/license"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Manage License"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/subsidy"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/service"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/license"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/moneyhand" />
+
+    <TextView
+        android:id="@+id/tsubsidy"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/subsidy"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/license"
+        android:gravity="center"
+        android:text="Manage Subsidy"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/products"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tlicense"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cart5" />
+
+    <TextView
+        android:id="@+id/tproducts"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/products"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Manage Products"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/order"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tsubsidy"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/products"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/order_1" />
+
+    <TextView
+        android:id="@+id/torder"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/order"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tproducts"
+        android:gravity="center"
+        android:text="Manage Orders"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <ImageButton
+        android:id="@+id/user"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tproducts"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/manage_user" />
+
+    <TextView
+        android:id="@+id/tuser"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/user"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Manage User"
+        android:textSize="20dp" />
+    <ImageButton
+        android:id="@+id/sales"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/torder"
+        android:layout_toRightOf="@id/user"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/status" />
+
+    <TextView
+        android:id="@+id/tsales"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sales"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tuser"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Total Sales Report"
+        android:textSize="20dp" />
+</RelativeLayout>
+    <!--SERVIICE
+<TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="30dp"
+        android:textColor="@color/d_green"
+        android:textStyle="bold"
+        android:text="SERVICE OF A-GROWW->"
+        android:textSize="26dp" />
+
+    <ImageButton
+        android:id="@+id/license"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/service"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/es" />
+    <TextView
+        android:id="@+id/tlicense"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/license"
+        android:textSize="20dp"
+        android:text="LICENSE"/>
+
+    <ImageButton
+        android:id="@+id/subsidy"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/service"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/license"
+        android:src="@drawable/es" />
+    <TextView
+        android:id="@+id/tsubsidy"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/license"
+        android:layout_below="@+id/subsidy"
+        android:textSize="20dp"
+        android:text="SUBSIDY"/>
+
+    <ImageButton
+        android:id="@+id/products"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tlicense"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/cart" />
+    <TextView
+        android:id="@+id/tproducts"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/products"
+        android:textSize="20dp"
+        android:text="PRODUCTS"/>
+
+    <ImageButton
+        android:id="@+id/order"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tsubsidy"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/products"
+        android:src="@drawable/es" />
+    <TextView
+        android:id="@+id/torder"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/order"
+        android:layout_toRightOf="@+id/tproducts"
+        android:textSize="20dp"
+        android:text="ORDERS"/>
+    <ImageButton
+        android:id="@+id/payment"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tproducts"
+        android:src="@drawable/es" />
+    <TextView
+        android:id="@+id/tpayment"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/payment"
+        android:textSize="20dp"
+        android:text="PAYMENTS"/>
+    <ImageButton
+        android:id="@+id/reports"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/torder"
+        android:layout_toRightOf="@+id/payment"
+        android:src="@drawable/es" />
+    <TextView
+        android:id="@+id/treport"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/reports"
+        android:layout_toRightOf="@+id/tpayment"
+        android:textSize="20dp"
+        android:text="REPORTS"/>
+    <ImageButton
+        android:id="@+id/aboute"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tpayment"
+        android:src="@drawable/es" />
+    <TextView
+        android:id="@+id/taboute"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/aboute"
+        android:textSize="20dp"
+        android:text="ABOUTE US"/>
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Service Of Admin📺"
+        android:textColor="@color/green"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/license"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/service"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/es" />
+    <TextView
+        android:id="@+id/tlicense"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/license"
+        android:textSize="20dp"
+        android:text="LICENSE"/>
+
+    <ImageButton
+         android:id="@+id/subsidy"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_below="@+id/service"
+         android:layout_marginRight="10dp"
+         android:layout_toRightOf="@+id/license"
+         android:src="@drawable/es" />
+     <TextView
+         android:id="@+id/tsubsidy"
+         android:layout_width="200dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="10dp"
+         android:gravity="center"
+         android:layout_toRightOf="@+id/license"
+         android:layout_below="@+id/subsidy"
+         android:textSize="20dp"
+         android:text="SUBSIDY"/>
+
+     <ImageButton
+         android:id="@+id/products"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginLeft="10dp"
+         android:layout_below="@+id/tlicense"
+         android:layout_marginRight="10dp"
+         android:src="@drawable/es" />
+     <TextView
+         android:id="@+id/tproducts"
+         android:layout_width="200dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="10dp"
+         android:gravity="center"
+         android:layout_below="@+id/products"
+         android:textSize="20dp"
+         android:text="PRODUCTS"/>
+
+     <ImageButton
+         android:id="@+id/order"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_below="@+id/tsubsidy"
+         android:layout_marginRight="10dp"
+         android:layout_toRightOf="@+id/products"
+         android:src="@drawable/es" />
+     <TextView
+         android:id="@+id/torder"
+         android:layout_width="200dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="10dp"
+         android:gravity="center"
+         android:layout_below="@+id/order"
+         android:layout_toRightOf="@+id/tproducts"
+         android:textSize="20dp"
+         android:text="ORDERS"/>
+     <ImageButton
+         android:id="@+id/payment"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginLeft="10dp"
+         android:layout_below="@+id/tproducts"
+         android:src="@drawable/es" />
+     <TextView
+         android:id="@+id/tpayment"
+         android:layout_width="200dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="10dp"
+         android:gravity="center"
+         android:layout_below="@+id/payment"
+         android:textSize="20dp"
+         android:text="PAYMENTS"/>
+     <ImageButton
+         android:id="@+id/reports"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_below="@+id/torder"
+         android:layout_toRightOf="@+id/payment"
+         android:src="@drawable/es" />
+     <TextView
+         android:id="@+id/treport"
+         android:layout_width="200dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="10dp"
+         android:gravity="center"
+         android:layout_below="@+id/reports"
+         android:layout_toRightOf="@+id/tpayment"
+         android:textSize="20dp"
+         android:text="REPORTS"/>
+     <ImageButton
+         android:id="@+id/aboute"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginLeft="10dp"
+         android:layout_below="@+id/tpayment"
+         android:src="@drawable/es" />
+
+
+     <ImageButton
+         android:id="@+id/license"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_below="@+id/service"
+         android:layout_marginLeft="10dp"
+         android:src="@drawable/es" />
+
+     <ImageButton
+         android:id="@+id/subsidy"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_below="@+id/service"
+         android:layout_marginRight="10dp"
+         android:layout_toRightOf="@+id/license"
+         android:src="@drawable/es" />
+
+     <ImageButton
+         android:id="@+id/fertilizer"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_below="@+id/license"
+         android:layout_marginLeft="10dp"
+         android:src="@drawable/es" />
+     <ImageButton
+         android:id="@+id/products"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginRight="10dp"
+         android:layout_below="@+id/subsidy"
+         android:layout_toRightOf="@+id/fertilizer"
+         android:src="@drawable/es" />
+
+     <ImageButton
+         android:id="@+id/crops"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginLeft="10dp"
+         android:layout_below="@+id/fertilizer"
+         android:src="@drawable/es" />
+
+     <ImageButton
+         android:id="@+id/user"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginRight="10dp"
+         android:layout_below="@+id/products"
+         android:layout_toRightOf="@+id/crops"
+         android:src="@drawable/es" />
+     <ImageButton
+         android:id="@+id/order"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginLeft="10dp"
+         android:layout_below="@+id/crops"
+         android:src="@drawable/es" />
+     <ImageButton
+         android:id="@+id/payment"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginRight="10dp"
+         android:layout_below="@+id/user"
+         android:layout_toRightOf="@id/order"
+         android:src="@drawable/es" />
+     <ImageButton
+         android:id="@+id/reports"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginLeft="10dp"
+         android:layout_below="@+id/order"
+         android:src="@drawable/es" />
+     <ImageButton
+         android:id="@+id/ex"
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_marginRight="10dp"
+         android:layout_below="@+id/payment"
+         android:layout_toRightOf="@id/reports"
+         android:src="@drawable/es" />-->

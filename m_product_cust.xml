@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pimg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pimg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pname"
+        android:layout_toRightOf="@+id/pimg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/cancle"
+        android:layout_below="@+id/price"
+        android:layout_marginLeft="130dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text=" Cancel"/>
+    <Button
+        android:id="@+id/Confirm"
+        android:layout_toRightOf="@+id/cancle"
+        android:layout_below="@+id/price"
+        android:layout_marginLeft="10dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"/>
+</RelativeLayout>

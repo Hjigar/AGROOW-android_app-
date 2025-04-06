@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kisan">
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="LICENCE"
+        android:textCursorDrawable="@drawable/es"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/apply_lic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Apply License"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_data"
+        />
+
+
+</TableLayout>
+    <!-->
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="============================="/>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTRE USER EMAIL::>"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="USER EMAIL" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTRE PASSWORD::>"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD" />
+    </TableRow>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/login"
+        android:textSize="26dp"
+        android:text="A-GROWW->"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DON'T HAVE LICENSE"
+        android:layout_marginLeft="110dp"
+        android:id="@+id/create"
+        android:textColor="@color/red"
+        android:textSize="26dp"/><ImageButton
+          android:id="@+id/create"
+          style="@style/Animation.Design.BottomSheetDialog"
+          android:layout_width="170dp"
+          android:layout_height="70dp"
+          android:layout_below="@+id/logo"
+          android:layout_marginLeft="30dp"
+          android:src="@drawable/es" />
+      <ImageButton
+          android:id="@+id/show"
+          android:layout_width="170dp"
+          android:layout_height="70dp"
+          android:layout_below="@+id/logo"
+          android:layout_toRightOf="@+id/create"
+          android:src="@drawable/es" />
+      <ImageButton
+          android:id="@+id/update"
+          android:layout_width="170dp"
+          android:layout_marginLeft="30dp"
+          android:layout_height="70dp"
+          android:layout_below="@+id/create"
+          android:src="@drawable/es" />
+      <ImageButton
+          android:id="@+id/products"
+          android:layout_width="170dp"
+          android:layout_height="70dp"
+          android:layout_below="@+id/show"
+          android:layout_toRightOf="@+id/update"
+          android:src="@drawable/es" />
+
+      <ImageButton
+          android:id="@+id/crops"
+          android:layout_width="100dp"
+          android:layout_height="50dp"
+          android:layout_below="@+id/license"
+          android:layout_marginLeft="10dp"
+          android:src="@drawable/es" />-->
+
+

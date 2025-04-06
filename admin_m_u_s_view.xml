@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/fn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:drawableStart="@drawable/user_black"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/user_black"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/ln"/>
+
+    <TextView
+        android:id="@+id/phno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:drawableStart="@drawable/phone_an"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/date"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/home_an"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/addres"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/email"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/email"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/kay"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/pass"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/delete"
+            android:text="Delete User"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/delete"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/update"
+            android:text="Update USer"/>
+    </RelativeLayout>
+
+</TableLayout>

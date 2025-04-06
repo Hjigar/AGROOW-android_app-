@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/t1"
+        android:src="@drawable/tot_sales" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="---------------"
+        />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/t1"
+            android:src="@drawable/day1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_gravity="center"
+            android:text="@string/ruppe"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:text="1234"
+            android:textColor="@color/black"
+            android:textSize="43dp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="---------------"
+        />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/t1"
+            android:src="@drawable/days7" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_gravity="center"
+            android:text="@string/ruppe"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/day7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:text="1234"
+            android:layout_toRightOf="@+id/ru"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="43dp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="---------------"
+        />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/t1"
+            android:src="@drawable/monthly" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_gravity="center"
+            android:text="@string/ruppe"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/day31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:text="1234"
+            android:layout_toRightOf="@+id/ru"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="43dp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="---------------"
+        />
+    <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/t1"
+            android:src="@drawable/tear" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_gravity="center"
+            android:text="@string/ruppe"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/day365"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:text="1234"
+            android:layout_toRightOf="@+id/ru"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="43dp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="---------------"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Total Stock of Agroww"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/t1"
+            android:src="@drawable/stock" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_gravity="center"
+            android:text="@string/ruppe"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:text="1234"
+            android:layout_toRightOf="@+id/ru"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="43dp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="---------------"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Total Users Of Agroww"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/t1"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="👨‍🌾"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:text="1234"
+            android:layout_toRightOf="@+id/ru"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="43dp"
+            android:textStyle="bold" />
+
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="---------------"
+        />
+
+
+    <!--<ImageView
+        android:id="@+id/d7"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/es" />
+
+    <TextView
+        android:id="@+id/day7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d7"
+        android:layout_marginTop="22dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="hrtfghbjmn"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/es"
+        android:layout_below="@+id/day7"
+        android:id="@+id/m1"/>
+    <TextView
+        android:id="@+id/mo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:layout_below="@+id/m1"
+        android:text="hrtfghbjmn"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/es"
+        android:layout_below="@+id/mo1"
+        android:id="@+id/y1"/>
+    <TextView
+        android:id="@+id/year1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:layout_below="@+id/y1"
+        android:text="hrtfghbjmn"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/es"
+        android:layout_below="@+id/mo1"
+        android:id="@+id/st"/>
+    <TextView
+        android:id="@+id/stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:layout_below="@+id/y1"
+        android:text="hrtfghbjmn"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/es"
+        android:layout_below="@+id/mo1"
+        android:id="@+id/us"/>
+    <TextView
+        android:id="@+id/users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:layout_below="@+id/y1"
+        android:text="hrtfghbjmn"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />-->
+</TableLayout>
+</ScrollView>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/back3">
+
+  <!--  <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="AGROWW"
+        android:textColor="@color/material_on_background_disabled"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/slog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:gravity="center"
+        android:text="MORE GROWW THE AGROWW"
+        android:textSize="20dp" />-->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/es" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/logo"
+        android:text="GOOD DAY,"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="10dp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:text="MAIN BALANCE"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balance"
+        android:text="1326000"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/balance"
+        android:src="@drawable/abc_vector_test" />
+
+
+  <ImageButton
+      android:id="@+id/FUND"
+      android:layout_width="112dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tv1"
+      android:layout_marginLeft="61dp"
+      android:layout_marginTop="23dp"
+      android:layout_toRightOf="@+id/go"
+      android:scaleType="fitXY"
+      android:src="@drawable/es" />
+
+
+  <!--SERVIICE-->
+
+  <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bal"
+        android:layout_margin="10dp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:text="SERVICE OF AGROWW"
+        android:textSize="20dp" />
+  <ImageButton
+      android:id="@+id/license"
+      android:layout_width="200dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/service"
+      android:src="@drawable/es" />
+  <ImageButton
+      android:id="@+id/subsidy"
+      android:layout_width="200dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/service"
+      android:layout_toRightOf="@+id/license"
+      android:src="@drawable/es" />
+  <ImageButton
+      android:id="@+id/fertilizer"
+      android:layout_width="200dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/license"
+      android:src="@drawable/es" />
+  <ImageButton
+      android:id="@+id/products"
+      android:layout_width="200dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/subsidy"
+      android:layout_toRightOf="@+id/fertilizer"
+      android:src="@drawable/es" />
+
+  <ImageButton
+      android:id="@+id/crops"
+      android:layout_width="200dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/fertilizer"
+      android:src="@drawable/es" />
+
+  <ImageButton
+      android:id="@+id/user"
+      android:layout_width="200dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/products"
+      android:layout_toRightOf="@+id/crops"
+      android:src="@drawable/es" />
+  <ImageButton
+      android:id="@+id/water"
+      android:layout_width="200dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/crops"
+      android:src="@drawable/es" />
+  <ImageButton
+      android:id="@+id/next"
+      android:layout_width="200dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/user"
+      android:layout_toRightOf="@id/water"
+      android:src="@drawable/es" />
+  <!--<ImageButton
+      android:id="@+id/license"
+      android:layout_width="100dp"
+      android:layout_height="50dp"
+      android:layout_below="@+id/service"
+      android:layout_marginLeft="10dp"
+      android:src="@drawable/es" />
+    <ImageButton
+        android:id="@+id/subsidy"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/service"
+        android:layout_toRightOf="@+id/license"
+        android:src="@drawable/es" />
+    <ImageButton
+        android:id="@+id/fertilizer"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/service"
+        android:layout_toRightOf="@+id/subsidy"
+        android:src="@drawable/es" />
+    <ImageButton
+        android:id="@+id/products"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/service"
+        android:layout_toRightOf="@+id/fertilizer"
+        android:src="@drawable/es" />
+
+    <ImageButton
+        android:id="@+id/crops"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/license"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/es" />
+
+    <ImageButton
+        android:id="@+id/recycle"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/subsidy"
+        android:layout_toRightOf="@+id/crops"
+        android:src="@drawable/es" />
+    <ImageButton
+        android:id="@+id/water"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/subsidy"
+        android:layout_toRightOf="@+id/recycle"
+        android:src="@drawable/es" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/subsidy"
+        android:layout_toRightOf="@+id/water"
+        android:src="@drawable/es" />-->
+
+</RelativeLayout>

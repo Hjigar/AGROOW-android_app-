@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moneyhand">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="SUBSIDY DETAILS"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/approved_subsidy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/app_background"
+        android:layout_below="@id/t1"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp" />
+    <ImageView
+        android:id="@+id/decline_subsidy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/x"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/approved_subsidy"
+        android:layout_below="@id/t1"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+    <ListView
+        android:id="@+id/subsidy_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/approved_subsidy" />
+</RelativeLayout>

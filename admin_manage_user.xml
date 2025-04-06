@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kisan">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="USER DETAILS"
+        />
+<EditText
+    android:id="@+id/search"
+    android:layout_width="290dp"
+    android:layout_height="70dp"
+    android:drawableStart="@drawable/user_serach"
+    android:textColorHint="@color/white"
+    android:hint="Find User"
+    android:layout_below="@+id/t1"/>
+    <Button
+        android:id="@+id/sb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_toRightOf="@+id/search"
+        android:layout_below="@+id/t1"
+        />
+
+    <ListView
+        android:id="@+id/user_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/t1" />
+</RelativeLayout>

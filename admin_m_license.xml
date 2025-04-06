@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="LICENSE DETAILS"
+        />
+    <ImageView
+        android:id="@+id/approved_license"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/app_background"
+        android:layout_below="@id/t1"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:text="Approved Licenses" />
+    <ImageView
+    android:id="@+id/decline_license"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+        android:src="@drawable/x"
+    android:textSize="20dp"
+    android:padding="10dp"
+        android:layout_toRightOf="@+id/approved_license"
+    android:layout_below="@id/t1"
+    android:textStyle="bold"
+    android:layout_margin="20dp"
+    android:text="Decline Licenses" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_data"
+        android:layout_below="@+id/decline_license"
+
+        />
+    <Button
+        android:id="@+id/approve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_below="@id/license_data"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:letterSpacing="0.5"
+        android:text="Approve" />
+    <Button
+        android:id="@+id/decline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/approve"
+        android:layout_below="@id/license_data"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:letterSpacing="0.5"
+        android:text="Decline" />
+
+</RelativeLayout>

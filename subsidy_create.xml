@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kisan">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="APPLY FOR SUBSIDY"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="*NOTE:  WHEN  APPLYING SUBSIDY SO FIRST YOU HAVING FARMER FARM IMAGES  !!!"
+        android:textCursorDrawable="@drawable/es"
+        android:textColor="@color/red"
+        android:layout_below="@+id/logo"
+        android:textSize="26dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/user_black"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="phone"
+        android:hint="YOUR USER ID"
+        android:id="@+id/uid"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/phone_an"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:hint="YOUR PHONE NUMBER"
+        android:id="@+id/phone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/img"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textUri"
+            android:hint="UPLOAD FARM IMAGE"
+            android:id="@+id/farm_img"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/img"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:hint="UPLOAD CROP IMAGE"
+            android:inputType="textUri"
+            android:layout_marginTop="10dp"
+            android:id="@+id/crop_img"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/home_an"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="FARM ADDRESS"
+        android:inputType="textPostalAddress"
+        android:id="@+id/farm_add"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/wallet"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:hint="SUBSIDY AMMOUNT"
+            android:id="@+id/subsidy_amo"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/description"
+            android:textColorHint="@color/black"
+            android:hint="DESCRIPTION"
+            android:padding="10dp"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"
+            android:id="@+id/despicstion"/>
+
+    <Button
+        android:id="@+id/apply_subsidy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttons"
+        android:letterSpacing="0.8"
+        android:textSize="20dp"
+        android:text="AGROWW" />
+</TableLayout>
+    <!--
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIRST NAME::>"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fn"/>
+    </TableRow>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="EMIAL ADDRESS"
+            android:id="@+id/email"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="PASSWORD"
+            android:id="@+id/pass"/>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tln"
+            android:textStyle="bold"
+            android:text="LAST NAME::>"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ln"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIDDEL NAME::>"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mn"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tage"
+            android:text="AGE::>"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:text="MALE"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2"
+            android:text="FEMALE"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="ENTER ADDRESS::>"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv6"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="ENTER DISTRICT::>"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dest"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tem"
+            android:textStyle="bold"
+            android:text="ENTER EMAIL::>"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tpass"
+            android:textStyle="bold"
+            android:text="ENTER PASSWORD::>"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv5"/>
+    </TableRow>
+
+
+    <Button
+        android:id="@+id/lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="A->GROWW" />
+      <TableRow
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:text="ENTER COURSE::>"
+              android:textSize="20dp"/>
+          <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv6"/>
+
+      </TableRow>
+      <TableRow
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <CheckBox android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:id="@+id/and"
+              android:text="ANDROID"/>
+          <CheckBox android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:id="@+id/php"
+              android:text="PHP"/>
+            <CheckBox android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:id="@+id/java"
+                 android:text="JAVA"/>
+                  <TableRow
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="RE-ENTER EMAIL::>"
+              android:textStyle="bold"
+              android:textSize="20dp"/>
+          <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv8"/>
+                <Button
+              android:id="@+id/cb"
+              android:layout_width="100dp"
+              android:layout_height="50dp"
+
+              android:text="CLEAR" />
+      </TableRow>
+      </TableRow>-->

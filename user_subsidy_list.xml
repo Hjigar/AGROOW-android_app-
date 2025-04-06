@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<TextView
+        android:id="@+id/sid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="--------------------------------------------"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/line1"/>
+    <TextView
+        android:id="@+id/subsidy_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/user_black"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/phone_an"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <ImageView
+        android:id="@+id/sfarm"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/sid"
+        android:layout_marginTop="20dp" />
+    <ImageView
+        android:id="@+id/scrop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/sfarm"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/sfarm_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/scrop"
+        android:drawableStart="@drawable/home_an"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/sub_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/sfarm_add"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/wallet"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/sdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_amt"
+        android:drawableStart="@drawable/description"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="--------------------------------------------"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/line2"/>
+   <!-- <TextView
+        android:id="@+id/sub_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sdescription"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />-->
+</TableLayout>

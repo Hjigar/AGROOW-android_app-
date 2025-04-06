@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Fill Delivery Details"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:drawableStart="@drawable/phone_an"
+        android:layout_below="@+id/product"
+        android:hint="Phone No"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:inputType="textMultiLine"
+        android:drawableStart="@drawable/home_an"
+        android:hint="Delivery Address"/>
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uid"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Product Details"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/pimg"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/bill"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pimg"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/cart_an"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/pname"
+            android:textSize="30dp"
+            android:text="@string/ruppe"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ru"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/pname"
+            android:layout_toRightOf="@+id/ru"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/qt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pname"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/quantity"
+            android:text="/qty"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/pname"
+            android:layout_toRightOf="@+id/price"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/quantity"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/mini_rs"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </RelativeLayout>
+</TableRow>
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/pname"
+        android:background="@drawable/buttons"
+        android:text="💸Pay💸"
+        android:textSize="30dp" />
+</TableLayout>

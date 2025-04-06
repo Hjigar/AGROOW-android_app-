@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back6"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:background="@drawable/ring2"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="50dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_back"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/black"
+        android:drawableStart="@drawable/user_black"
+        android:padding="10dp"
+        android:inputType="text"
+        android:hint="First name "
+        android:id="@+id/fn"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_back"
+        android:textColorHint="@color/black"
+        android:drawableStart="@drawable/account_round"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:hint="Last name "
+        android:id="@+id/ln"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_back"
+        android:textColorHint="@color/black"
+        android:drawableStart="@drawable/phone_an"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:hint="Phone no "/>
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_back"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/date"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:inputType="date"
+        android:hint="Date Of Birth"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_back"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/home_an"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:id="@+id/address"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_back"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/email"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:id="@+id/email"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_back"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/kay"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:hint="Password "
+        android:id="@+id/password"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <Button
+        android:id="@+id/U_register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:letterSpacing="0.7"
+        android:text="AGROWW" />
+    </RelativeLayout>
+</TableLayout>
+</ScrollView>

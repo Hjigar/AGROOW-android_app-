@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:fontFamily="serif-monospace"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@drawable/ring2"
+        android:layout_marginBottom="20pt"
+        android:src="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginBottom="20pt"
+        android:gravity="center"
+        android:text="Login"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:drawableStart="@drawable/account_round"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/widget_back"
+        android:hint=" Name@gmail.com"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/l_gray" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/l_gray"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/password_lock"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@drawable/widget"
+        android:hint="Password1326"
+        android:textColorHighlight="@color/white"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/buttons"
+        android:letterSpacing="0.5"
+        android:padding="10dp"
+        android:text="AGROWW"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:text="DON'T HAVE ACCOUNT"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>

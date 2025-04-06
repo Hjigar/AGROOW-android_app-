@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back6">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SUBSIDY"
+        android:layout_marginTop="10dp"
+        android:textCursorDrawable="@drawable/es"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="*NOTE:  WHEN  APPLYING SUBSIDY SO FIRST YOU HAVING LICENCE MUST !!!"
+        android:textCursorDrawable="@drawable/es"
+        android:textColor="@color/red"
+        android:layout_below="@+id/logo"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/apply_subsidy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Apply Subsidy"
+        android:fontFamily="serif-monospace"
+        android:layout_below="@+id/desc"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subsidy_data"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/apply_subsidy"
+        />
+</RelativeLayout>
+    <!-- <TextView
+      android:id="@+id/log"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/desc"
+      android:layout_marginTop="120dp"
+      android:text="==LOGIN=="
+      android:textSize="40dp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:textColor="@color/purple_700"/>
+  <ImageView
+      android:id="@+id/i1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="15dp"
+      android:layout_below="@+id/log"
+      android:src="@drawable/es"/>
+  <EditText
+      android:id="@+id/email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/i1"
+      android:layout_marginLeft="20dp"
+      android:layout_below="@+id/log"
+      android:textStyle="bold"
+      android:textColorHint="@color/black"
+      android:hint="name@gmail.com"/>
+
+  <ImageView
+      android:id="@+id/i2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/i1"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="15dp"
+      android:src="@drawable/es"/>
+  <EditText
+      android:id="@+id/pass"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/email"
+      android:layout_toRightOf="@+id/i2"
+      android:layout_marginLeft="20dp"
+      android:textStyle="bold"
+      android:textColorHint="@color/black"
+      android:hint="name1326" />
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/login"
+      android:layout_below="@+id/i2"
+      android:text="A->GROWW"
+      android:layout_margin="15dp"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="DON'T HAVE ACCOUNT"
+      android:layout_below="@+id/login"
+      android:layout_marginLeft="150dp"
+      android:id="@+id/reg"
+      android:textColor="@color/red"
+      android:textSize="20dp"/>
+
+<TextView
+      android:id="@+id/logo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="70dp"
+      android:gravity="center"
+      android:text="===SUBSIDY==="
+      android:textCursorDrawable="@drawable/es"
+      android:textColor="@color/purple_500"
+      android:textSize="40dp"
+      android:textStyle="bold" />
+  <TextView
+      android:id="@+id/desc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="*NOTE:  WHEN  APPLYING SUBSIDY SO FIRST YOU HAVING LICENCE MUST!!!"
+      android:textCursorDrawable="@drawable/es"
+      android:textColor="@color/purple_500"
+      android:layout_below="@+id/logo"
+      android:textSize="30dp"
+      android:textStyle="bold" />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="==LOGIN=="
+      android:textSize="40dp"
+      android:layout_marginTop="60dp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:textColor="@color/purple_700"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="25dp"
+      android:text="==========================="/>
+  <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ENTRE USER EMAIL::>"
+          android:textColor="@color/black"
+          android:textSize="20dp"/>
+
+      <EditText
+          android:id="@+id/uname"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="USER EMAIL" />
+  </TableRow>
+  <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ENTRE PASSWORD::>"
+          android:textColor="@color/black"
+          android:textSize="20dp"/>
+
+      <EditText
+          android:id="@+id/pass"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="PASSWORD" />
+  </TableRow>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:id="@+id/login"
+      android:textSize="26dp"
+      android:text="A-GROWW->"
+      android:layout_margin="15dp"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="DON'T HAVE SUBSIDY"
+      android:layout_marginLeft="110dp"
+      android:id="@+id/create"
+      android:textColor="@color/red"
+      android:textSize="26dp"/>
+
+
+
+    <ImageButton
+       android:id="@+id/create"
+       android:layout_width="250dp"
+       android:layout_height="70dp"
+       android:layout_below="@+id/desc"
+       android:layout_marginLeft="30dp"
+       android:src="@drawable/es" />
+   <ImageButton
+       android:id="@+id/show"
+       android:layout_width="170dp"
+       android:layout_height="70dp"
+       android:layout_below="@+id/desc"
+       android:layout_toRightOf="@+id/create"
+       android:src="@drawable/es" />
+    <ImageButton
+         android:id="@+id/update"
+         android:layout_width="170dp"
+         android:layout_marginLeft="30dp"
+         android:layout_height="70dp"
+         android:layout_below="@+id/create"
+         android:src="@drawable/es" />
+     <ImageButton
+         android:id="@+id/products"
+         android:layout_width="170dp"
+         android:layout_height="70dp"
+         android:layout_below="@+id/show"
+         android:layout_toRightOf="@+id/update"
+         android:src="@drawable/es" />
+      <ImageButton
+          android:id="@+id/crops"
+          android:layout_width="100dp"
+          android:layout_height="50dp"
+          android:layout_below="@+id/license"
+          android:layout_marginLeft="10dp"
+          android:src="@drawable/es" />-->
+

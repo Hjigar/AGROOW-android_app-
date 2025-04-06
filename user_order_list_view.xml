@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="-------------------------------------------"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/line1"/>
+    <TextView
+        android:id="@+id/buy_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/date"
+        android:layout_below="@+id/line1"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/buy_date"
+        android:drawableStart="@drawable/phone_an"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+ />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/home_an"
+        android:layout_below="@+id/phone"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/cart_an"
+        android:layout_below="@+id/address"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/pname"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/pname"
+        android:textSize="30dp"
+        android:text="@string/ruppe"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ru"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pname"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/ru"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/qt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pname"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/quantity"
+        android:text="/qty  "
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/pname"
+        android:layout_toRightOf="@+id/price"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/quantity"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pname"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/qt"
+        android:drawableStart="@drawable/mini_rs"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ru"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="10dp"
+        android:text="-------------------------------------------"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+    <ImageView
+        android:id="@+id/report"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="160dp"
+        android:src="@drawable/recept"
+        android:layout_below="@+id/line2"/>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report"
+        android:layout_marginTop="-19dp"
+        android:layout_marginLeft="10dp"
+        android:text="-------------------------------------------"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+</RelativeLayout>

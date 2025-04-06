@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/handback"
+    >
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="PRODUCT DETAILS"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/cart_an"
+        android:id="@+id/pname"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/product"
+        android:hint="Product name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pquan"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/product"
+        android:hint="Product Quantity"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pdesc"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/description"
+        android:textSize="30dp"
+        android:layout_below="@+id/pname"
+        android:inputType="textMultiLine"
+        android:hint="Product Description"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:drawableStart="@drawable/mini_rs"
+        android:layout_below="@+id/description"
+        android:hint="Product Price"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pimg"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/img"
+        android:textSize="30dp"
+        android:inputType="textUri"
+        android:hint="Product Image"
+        />
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Insert"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.5"
+        android:background="@drawable/buttons"
+        android:textSize="26dp"
+        android:layout_below="@+id/pimg"/>
+    <Button
+        android:id="@+id/manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Manage Products"
+        android:letterSpacing="0.2"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/buttons"
+        android:textSize="26dp"
+        android:layout_below="@+id/pimg"/>
+
+   <!-- <Button
+        android:id="@+id/delete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/insert"
+        android:text="Delete"
+        android:textSize="26dp"
+        android:layout_below="@+id/price"/>
+    <Button
+        android:id="@+id/update"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="26dp"
+        android:layout_toRightOf="@+id/delete"
+        android:layout_below="@+id/price"/>-->
+
+
+</TableLayout>

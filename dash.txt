@@ -1,0 +1,100 @@
+#
+	            $query=mysqli_query($conn,"select SUM(price) as tot from product_buy");#Where Added_on between '$st' and '$end'	
+	#$result=mysqli_query($conn,$query);
+	$responce=[];
+	$responce['message']="success";
+	while($row=mysqli_fetch_assoc($query))
+		{
+		if($row['tot']==null)
+		{
+		echo "0";
+		}
+		echo $responce['data'][]=$row['tot']."<br>";
+
+                           $st=strtotime(date('Y-m-d'));
+                           $st=strtotime("-7 day",$st);
+                           $st=date('Y-m-d',$st);
+                           $end=date('Y-m-d');
+                           $sql=mysqli_query($conn,"select SUM(price) as tot from product_buy ");
+                           while($row=mysqli_fetch_assoc($sql))
+			{
+                             echo $row['tot']."<br>";
+                            
+                        }
+                       
+                           $st=strtotime(date('Y-m-d'));
+                           $st=strtotime("-30 day",$st);
+                           $st=date('Y-m-d',$st);
+                           $end=date('Y-m-d');
+                           $sql=mysqli_query($conn,"select SUM(price) as tot from product_buy");
+                           while($row=mysqli_fetch_assoc($sql)){
+                             echo $row['tot']."<br>";
+                            
+                        }
+
+                           $st=strtotime(date('Y-m-d'));
+                           $st=strtotime("-365 day",$st);
+                           $st=date('Y-m-d',$st);
+                           $end=date('Y-m-d');
+                           $sql=mysqli_query($conn,"select SUM(price) as tot from product_buy ");
+                           while($row=mysqli_fetch_assoc($sql)){
+                             echo $row['tot']."<br>";
+                        }
+                       
+
+            $sql=mysqli_query($conn,"select count(P_QUANTITY) as product from product_tbl");
+            $row=mysqli_fetch_assoc($sql);
+            echo $row['product']."<br>";
+
+
+            $sql=mysqli_query($conn,"select SUM(P_PRICE*P_QUANTITY) as stock from product_tbl");
+            $row=mysqli_fetch_assoc($sql);
+            echo $row['stock']."<br>";
+
+            $sql=mysqli_query($conn,"select count(F_NAME) as name from user_tbl");
+            $row=mysqli_fetch_assoc($sql);
+            echo $row['name']."<br>";
+ ?>
+	#
+	
+                 $st7=strtotime(date('Y-m-d'));
+                           $st=strtotime("-7 day",$st7);
+                           $st7=date('Y-m-d',$st);
+                           $end=date('Y-m-d');
+$day7="select SUM(price) as tot from product_buy";
+$d7=mysqli_query($conn,$day7);
+$responce=[];
+if(mysqli_num_rows($d7)>0)
+{
+	$responce['message']="success";
+	while($row=mysqli_fetch_assoc($d7))
+	{
+	$responce['data'][]=$row;
+	}
+}
+                       $st=strtotime(date('Y-m-d'));
+                           $st=strtotime("-30 day",$st);
+                           $st=date('Y-m-d',$st);
+                           $end=date('Y-m-d');
+$mo1="select SUM(price) as tot from product_buy";
+$m1=mysqli_query($conn,$mo1);
+$responce=[];
+if(mysqli_num_rows($m1)>0)
+{
+	$responce['message']="success";
+	while($row=mysqli_fetch_assoc($m1))
+	{
+	#$responce['data'][]=$row;
+	}
+}
+$day1="select SUM(price) as tot from product_buy";
+$d1=mysqli_query($conn,$day1);
+$responce=[];
+if(mysqli_num_rows($d1)>0)
+{
+	$responce['message']="success";
+	while($row=mysqli_fetch_assoc($d1))
+	{
+	$responce['data'][]=$row;
+	}
+}

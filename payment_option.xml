@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💳Payment Options"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+        <ImageView
+            android:id="@+id/gpay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gpay" />
+        <TextView
+            android:id="@+id/tgpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Pay"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/pimg"
+            />
+
+
+    <ImageView
+        android:id="@+id/paytm"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/paypal" />
+    <TextView
+        android:id="@+id/tpaytm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paypal"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_below="@+id/pimg"
+        />
+    <ImageView
+    android:id="@+id/Card"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/open_door" />
+    <TextView
+        android:id="@+id/tcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sjhv"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_below="@+id/pimg"
+        />
+    <ImageView
+    android:id="@+id/cod"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/es" />
+    <TextView
+        android:id="@+id/tcod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sjhv"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_below="@+id/pimg"
+        />
+</TableLayout>

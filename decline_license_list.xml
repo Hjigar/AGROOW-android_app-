@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="--------------------------------------------"
+        android:layout_marginTop="15dp"
+        android:id="@+id/line1"/>
+
+    <TextView
+        android:id="@+id/license_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:drawableStart="@drawable/card"
+        android:layout_below="@+id/line1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:drawableStart="@drawable/phone_an"
+        android:textStyle="bold"
+        android:layout_below="@+id/license_id"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/lid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/phone"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <ImageView
+        android:id="@+id/farm"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/lid"
+        android:layout_marginTop="20dp" />
+    <ImageView
+        android:id="@+id/crop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/farm"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/farm_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/crop"
+        android:drawableStart="@drawable/home_an"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/farm_add"
+        android:drawableStart="@drawable/description"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/status"
+        android:inputType="textCapWords"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="ORDERS DETAILS"
+        />
+
+    <EditText
+        android:id="@+id/search_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:layout_marginLeft="10dp"
+        android:hint="13-04-2004"
+        android:textColorHint="@color/black"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/serach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_toRightOf="@id/search_date"
+        android:drawableEnd="@drawable/search"
+        android:text="Serch Oredrs"
+        android:textSize="20dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_date"
+        android:id="@+id/order_data"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+    <!-- this is a list view for add to cart-->
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Cart"
+        />
+    <ImageView
+        android:id="@+id/pimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/t1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/pimg"
+        android:layout_below="@+id/t1"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pname"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/t1"
+        android:textSize="30dp" />
+    <EditText
+        android:id="@+id/qun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/price"
+        android:layout_toRightOf="@+id/pimg"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/qun"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/buttons"
+        android:text="Remove"
+        android:textSize="30dp" />
+
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/remove"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons"
+        android:text="Pay"
+        android:textSize="30dp" />
+
+</RelativeLayout>
